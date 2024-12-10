@@ -18,15 +18,15 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="flex space-x-6 border-b mt-10 mx-10 rounded-full px-5 h-16 items-center justify-between bg-zinc-500">
+    <nav className="flex space-x-6 border-0 shadow-sm mt-12 mx-10 rounded-full px-5 h-20 items-center justify-between bg-zinc-500">
       <Link
         href={"/"}
         className={`flex items-center space-x-3 font-bold ${
           currentPath === "/" ? "text-cyan-200" : "text-gray-50"
         } hover:text-sky-300 transition-colors`}
       >
-        <AiOutlineHome size="20" />
-        <Text>Hassan Mansoor</Text>
+        <AiOutlineHome size="24" />
+        <Text className="text-xl">Hassan Mansoor</Text>
       </Link>
       <div className="flex space-x-6 items-center">
         <ul className="space-x-6">
